@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    
+    <!-- Water Splash Arc -->
+    <path
+        android:fillColor="#E0F2FE"
+        android:pathData="M34,42 C30,52 30,68 40,75 C50,82 66,82 74,75 C82,68 83,56 79,48 C77,44 73,42 75,40 C77,38 82,42 85,50 C89,60 88,74 78,82 C68,90 48,90 36,82 C24,74 24,56 30,42 Z" />
+
+    <!-- Main Water Droplet (White) -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,26 C54,26 38,46 38,57 C38,65.8 45.2,73 54,73 C62.8,73 70,65.8 70,57 C70,46 54,26 54,26 Z" />
+
+    <!-- Inner Blue Accent -->
+    <path
+        android:fillColor="#0284C7"
+        android:pathData="M54,32 C54,32 42,48 42,57 C42,63.6 47.4,69 54,69 C60.6,69 66,63.6 66,57 C66,48 54,32 54,32 Z" />
+
+    <!-- "H" in H2O -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M46,51 h2.2 v3.5 h2.6 v-3.5 h2.2 v10 h-2.2 v-4.2 h-2.6 v4.2 h-2.2 z" />
+
+    <!-- "2" Subscript -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M54,58 h2.8 v0.9 h-1.6 v0.7 l1.6,1.5 v0.9 h-2.8 v-0.9 h1.6 v-0.6 l-1.6,-1.6 z" />
+
+    <!-- "O" in H2O -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M59,51 C57.8,51 57,52.3 57,56 C57,59.7 57.8,61 59,61 C60.2,61 61,59.7 61,56 C61,52.3 60.2,51 59,51 Z M59,52.8 C59.4,52.8 59.6,53.8 59.6,56 C59.6,58.2 59.4,59.2 59,59.2 C58.6,59.2 58.4,58.2 58.4,56 C58.4,53.8 58.6,52.8 59,52.8 Z" />
+
+    <!-- Splash Droplets -->
+    <path
+        android:fillColor="#E0F2FE"
+        android:pathData="M78,36 C78,34.3 79.3,33 81,33 C82.7,33 84,34.3 84,36 C84,37.7 82.7,39 81,39 C79.3,39 78,37.7 78,36 Z" />
+    <path
+        android:fillColor="#E0F2FE"
+        android:pathData="M81,27 C81,26 81.8,25.2 82.8,25.2 C83.8,25.2 84.6,26 84.6,27 C84.6,28 83.8,28.8 82.8,28.8 C81.8,28.8 81,28 81,27 Z" />
+
+    <!-- Bottom REMINDER Accent Lines -->
+    <path
+        android:fillColor="#FFFFFF"
+        android:pathData="M30,81 h12 v1 h-12 z M66,81 h12 v1 h-12 z" />
+</vector>

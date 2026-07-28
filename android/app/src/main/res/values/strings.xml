@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">H2O Reminder</string>
+    <string name="package_name">com.appzyro.h2oreminder</string>
+    <string name="version_name">1.0.2</string>
+    <string name="daily_goal">Daily Hydration Goal</string>
+    <string name="add_water">Add Water Intake</string>
+    <string name="water_logs">Intake History</string>
+    <string name="settings">Settings</string>
+    <string name="statistics">Statistics</string>
+    
+    <!-- AdMob Strings -->
+    <string name="admob_app_id">ca-app-pub-1831617002289210~1163861940</string>
+    <string name="admob_banner_ad_unit_id">ca-app-pub-1831617002289210/5267815684</string>
+    <string name="admob_interstitial_ad_unit_id">ca-app-pub-1831617002289210/2115038732</string>
+    <string name="admob_rewarded_ad_unit_id">ca-app-pub-1831617002289210/4362882415</string>
+    
+    <string name="watch_ad_to_unlock">Watch Ad to Unlock Advanced Weekly Analysis</string>
+    <string name="unlocked_weekly_analysis">Advanced Weekly Analysis Unlocked!</string>
+</resources>

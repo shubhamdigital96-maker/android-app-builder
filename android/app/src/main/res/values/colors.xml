@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primary_blue">#0077FF</color>
+    <color name="primary_blue_dark">#0055CC</color>
+    <color name="accent_cyan">#00D2FF</color>
+    <color name="background_light">#F8FAFC</color>
+    <color name="surface_card">#FFFFFF</color>
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#64748B</color>
+    <color name="accent_gold">#EAB308</color>
+    <color name="divider">#E2E8F0</color>
+    <color name="ic_launcher_background">#0EA5E9</color>
+</resources>

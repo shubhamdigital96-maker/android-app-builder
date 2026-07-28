@@ -1,0 +1,10 @@
+{
+  "name": "H2O Reminder",
+  "description": "A production-ready water intake tracker with daily goals, history, and smart reminders.",
+  "requestFramePermissions": [
+    "notifications"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
