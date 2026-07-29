@@ -98,3 +98,8 @@ jobs:
             android/build/reports/**
             android/app/build/reports/**
           retention-days: 7
+          - name: Verify gradlew
+  run: |
+    pwd
+    sha256sum gradlew
+    tail -20 gradlew
