@@ -1,63 +1,59 @@
-name: Android Build
-
-on:
-  workflow_dispatch:
-  push:
-    branches:
-      - main
-
-jobs:
-  build:
-    runs-on: ubuntu-latest
-
-    defaults:
-      run:
-        working-directory: android
-
-    steps:
+steps:
       - name: Checkout
         uses: actions/checkout@v4
 
       - name: Setup Java
         uses: actions/setup-java@v4
         with:
-          distribution: temurin
-          java-version: 17
-          cache: gradle
+          distribution: 'temurin'
+          java-version: '17'
+          cache: 'gradle'
 
       - name: Make gradlew executable
         run: chmod +x gradlew
+        working-directory: android
 
       - name: Check Gradle
         run: ./gradlew --version
+        working-directory: android
 
       - name: Show Tasks
+        # यहाँ tasks और --all के बीच मैंने नॉर्मल स्पेस डाल दिया है
         run: ./gradlew tasks --all
+        working-directory: android
 
       - name: Build Debug APK
         run: ./gradlew :app:assembleDebug --stacktrace --info --console=plain
+        working-directory: android
 
       - name: Build Release APK
         run: ./gradlew :app:assembleRelease --stacktrace --info --console=plain
+        working-directory: android
 
       - name: Build Release AAB
         run: ./gradlew :app:bundleRelease --stacktrace --info --console=plain
+        working-directory: android
 
-      - name: Upload APK
+      - name: Upload Debug APK
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: APK
-          path: |
-            android/app/build/outputs/apk/**/*.apk
+          name: Debug-APK
+          path: android/app/build/outputs/apk/debug/*.apk
 
-      - name: Upload AAB
+      - name: Upload Release APK
         uses: actions/upload-artifact@v4
         if: always()
         with:
-          name: AAB
-          path: |
-            android/app/build/outputs/bundle/**/*.aab
+          name: Release-APK
+          path: android/app/build/outputs/apk/release/*.apk
+
+      - name: Upload Release AAB
+        uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: Release-AAB
+          path: android/app/build/outputs/bundle/release/*.aab
 
       - name: Upload Reports
         uses: actions/upload-artifact@v4
